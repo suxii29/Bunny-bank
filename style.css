@@ -1,28 +1,120 @@
-body {
-  font-family: Arial;
-  text-align: center;
-  background: linear-gradient(#ffe6f0, #fff);
-  padding: 30px;
+body{
+margin:0;
+font-family:Georgia, serif;
+background:#fff6fa;
+color:#6b4d57;
 }
 
-h1 {
-  color: #c2185b;
+.container{
+padding:20px;
+text-align:center;
 }
 
-h2 {
-  font-size: 40px;
-  color: #333;
+h1{
+color:#d67ca2;
 }
 
-button {
-  background: #ff69b4;
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  font-size: 18px;
-  border-radius: 12px;
-  cursor: pointer;
+.total-card{
+background:white;
+border-radius:20px;
+padding:15px;
+margin-bottom:20px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
 }
 
-button:hover {
-  background: #ff85
+.jar-wrapper{
+display:flex;
+justify-content:center;
+margin:30px 0;
+}
+
+.jar{
+width:220px;
+height:300px;
+border:8px solid rgba(255,255,255,.8);
+border-radius:40px 40px 80px 80px;
+background:rgba(255,255,255,.3);
+backdrop-filter:blur(6px);
+position:relative;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+.coins{
+position:absolute;
+bottom:0;
+width:100%;
+background:linear-gradient(#ffd66e,#ffbf47);
+height:0%;
+transition:0.8s;
+}
+
+.progress-bar{
+height:18px;
+background:#f4dce7;
+border-radius:999px;
+overflow:hidden;
+}
+
+.progress{
+height:100%;
+width:0%;
+transition:.6s;
+background:#f59ab8;
+}
+
+button{
+background:#e88eb2;
+border:none;
+padding:12px 22px;
+border-radius:999px;
+color:white;
+font-size:16px;
+margin-top:15px;
+}
+
+.history{
+margin-top:30px;
+background:white;
+padding:15px;
+border-radius:20px;
+}
+
+ul{
+list-style:none;
+padding:0;
+}
+
+li{
+padding:8px;
+border-bottom:1px solid #eee;
+}
+
+.modal{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.3);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.hidden{
+display:none;
+}
+
+.modal-content{
+background:white;
+padding:20px;
+border-radius:20px;
+width:80%;
+max-width:350px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:10px;
+border:1px solid #ddd;
+}
