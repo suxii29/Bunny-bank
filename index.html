@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Bunny Savings Jar</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunny Savings Jar</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="container">
+
 <h1>🐰 Bunny Savings Jar</h1>
 
-<h2 id="total">0</h2>
+<div class="total-card">
+<h2>Total Savings</h2>
+<p id="total">0 SAR</p>
+</div>
 
-<button onclick="addMoney()">Add Coin 💰</button>
+<div class="jar-wrapper">
+<div class="jar">
+<div class="coins" id="coins"></div>
+</div>
+</div>
+
+<div class="goal-box">
+<p>Weekly Goal</p>
+<div class="progress-bar">
+<div class="progress" id="progress"></div>
+</div>
+<p id="goalText">0 / 700 SAR</p>
+</div>
+
+<button id="depositBtn">Add Deposit</button>
+
+<div class="history">
+<h3>Recent Deposits</h3>
+<ul id="historyList"></ul>
+</div>
+
+</div>
+
+<div class="modal hidden" id="modal">
+<div class="modal-content">
+<h3>Add Deposit</h3>
+
+<input type="number" id="amountInput" placeholder="Amount">
+
+<textarea id="noteInput" placeholder="Note (optional)"></textarea>
+
+<button onclick="saveDeposit()">Save</button>
+<button onclick="closeModal()">Cancel</button>
+</div>
+</div>
 
 <script src="script.js"></script>
 
